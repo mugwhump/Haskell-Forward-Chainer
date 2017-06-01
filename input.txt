@@ -1,0 +1,17 @@
+# here are some example rules:
+
+        #bo
+#[a, [b1, b2], [c, c10]] # i.e. a <= b1, b2, not c, not c10
+#[h, [a, b, c], []] # i.e. h <= a, b, c
+#[g, [], [e, f]] # i.e. g <= not e, not f
+#[f, [], []] # i.e. f
+
+[p, [q], [r]]
+[p, [s], []]
+[q, [u], []]
+[u [], [s]]
+[r, [], [t]]
+[t, [], []]
+[s, [w], []]
+[n, [m], []]
+[m, [n], []]
